@@ -1,5 +1,9 @@
 // access console arguments
-var consoleArgs = process.argv;
+
+var consoleArgs = process.argv.slice(2).map(function(num){
+		return +num;
+});
+
 // output their sum
 
 var makeSum = function(arr){
@@ -14,5 +18,4 @@ var makeSum = function(arr){
 var sum = makeSum(consoleArgs);
 
 console.log(sum);
-
 
