@@ -8,7 +8,7 @@ filterExt(path, ext, function(error, list){
 				console.log('There was an error filtering by file extension');
 		list.forEach(function(name){
 				console.log(name);
-		})
+		});
 });
 
 
